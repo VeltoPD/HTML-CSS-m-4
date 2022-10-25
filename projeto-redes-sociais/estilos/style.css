@@ -29,7 +29,6 @@ section#telefone {
 
     height: 627px;
     width: 311px;
-    background-color: blue;
     background: url('../imagens/frame-iphone.png') no-repeat;
 }
 
@@ -37,7 +36,30 @@ iframe#tela {
    position: relative; 
    top: 80px;
    left: 22px;
-   width: 269px;
+   width: 267px;
    height: 471px;
-   
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img {
+    width: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.612);
+    box-sizing: border-box; 
+}
+
+/*
+box-sizing: border-box
+Fará com que a borda usada na configuração hover faça parte da caixa. 
+    Para entender melhor, desative e ative esta configuração.*/
+
+section#redes-sociais img:hover {
+    border: 2px solid rgba(255, 255, 255, 0.798);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.565);
+    transition: transform .3s, border .6s;
 }
